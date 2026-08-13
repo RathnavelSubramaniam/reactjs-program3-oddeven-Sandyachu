@@ -1,11 +1,22 @@
-// Arrow function to check odd or even
+
+
+
+script.js
+
 const isOddOrEven = (num) => {
-    return 
+    return
+    if(num % 2 == 0) {
+    return "Even";
+    } else {
+        return "odd";
+    }
 };
 
 // Function to display the result
 function checkNumber() {
     const number = Number(document.getElementById("number").value);
 
-    
+   
+    const result = isOddOrEven(number);
+    document.getElementById("result").innerHTML = `The number ${number} is ${result}.`;
 }
